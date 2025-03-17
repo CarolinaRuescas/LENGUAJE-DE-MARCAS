@@ -19,7 +19,6 @@
                 color: #000000;
             }
 
-            /* Style the header */
             header {
                 background: linear-gradient(to right, rgb(16, 71, 58), #feb47b);
                 padding: 30px;
@@ -51,10 +50,24 @@
                 background-color: #ffffff;
             }
 
+            .card2 a{
+                background-color: #082e1f;
+                padding: 3px 3px;
+                border-radius: 5px;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+            }
+
+            .card2 a:hover {
+                background-color: #082e1f;
+                color: rgb(216, 89, 30);
+            }
+
             h2{
                 color:#082e1f;
                 font-variant: small-caps;
-
             }
 
             h3{
@@ -72,8 +85,9 @@
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
-                border: 4px solid #082e1f;
+                border: 4px outset #082e1f;
                 margin-bottom: 15px;
+                margin-top: 15px;
                 background-color:  #47b68b;
 
             }
@@ -96,16 +110,13 @@
                 padding-left: 20px;
             }
 
-            .fakeimg {
-                background-color: #aaa;
-                width: 100%;
+            .card2 {
+                background-color: #fbe6ca;
+                border: dotted 8px #082e1f;
                 padding: 20px;
-                height: 200px;
-                background-position: center;
-                background-size: cover;
+                margin-top: 20px;
+                text-align: center;
             }
-
-
 
             .card {
                 background-color: #e2c298;
@@ -151,9 +162,6 @@
                 width: 100%;
                 }
             }
-
-            
-         
         </style>
     </head>
     <body>
@@ -171,17 +179,17 @@
         </header>
             
         <div class="topnav">
-                
-            <a href="https://www.esmadrid.com/">· Madrid ·</a></li>
-            <a href="https://www.viajarabarcelona.org/">· Barcelona ·</a></li>
-            <a href="https://www.andalucia.org/es/provincia-malaga">· Málaga ·</a></li>
+            <ul>
+                <li><a href="https://www.esmadrid.com/">· Madrid ·</a></li>
+                <li><a href="https://www.viajarabarcelona.org/">· Barcelona ·</a></li>
+                <li><a href="https://www.andalucia.org/es/provincia-malaga">· Málaga ·</a></li>
+            </ul>
         </div>
             
         <div class="row">
             <div class="leftcolumn">
                 <div class="card">
                     <h2>· ¡ VIAJA POR MADRID ! ·</h2>
-                    <h5>1º Viaje, 13 de Marzo, 2025</h5>
                     <img src="imagenes/imagenMadrid.jpg" alt="imagen de Madrid" class="flotanteImagen">
                     <h3>¿Quieres saber un poco sobre Madrid?</h3>
                     <p>Descubre Madrid como nunca antes con nuestra guía de viajes completa. Desde los emblemáticos museos 
@@ -192,7 +200,6 @@
                 </div>
                 <div class="card">
                     <h2>· ¡ BARCELONA ! ·</h2>
-                    <h5>2º Viaje, 15 de Marzo, 2025</h5>
                     <img src="imagenes/imagenBarcelona.jpg" alt="imagen de Barcelona" class="flotanteImagen">
                     <h3>¿Quieres saber un poco sobre Barcelona?</h3>
                     <p>Explora Barcelona, una ciudad vibrante llena de historia, arquitectura y cultura. Desde la majestuosa Sagrada Familia
@@ -203,7 +210,6 @@
                 </div>
                 <div class="card">
                     <h2>· ¡ MÁLAGA ! ·</h2>
-                    <h5>Title description, Sep 2, 2017</h5>
                     <img src="imagenes/imagenMalaga.jpg" alt="imagen de Malaga" class="flotanteImagen">
                     <h3>¿Quieres saber un poco sobre Málaga?</h3>
                     <p>Sumérgete en la belleza de Málaga, un destino que fusiona historia, sol y mar. Descubre sus impresionantes playas, 
@@ -213,28 +219,42 @@
                     </p>
                 </div>
             </div>
-                <div class="rightcolumn">
-                  <div class="card">
+            <div class="rightcolumn">
+                <div class="card">
                     <h2>Sobre Nosotros</h2>
                     <img src="imagenes/imagenLogo.jpeg" alt="imagen Logo" class="flotanteImagen">
-                    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-                  </div>
-                  <div class="card">
-                    <h2>Popular Post</h2>
-                    <div class="fakeimg"><p>Image</p></div>
-                    <div class="fakeimg"><p>Image</p></div>
-                    <div class="fakeimg"><p>Image</p></div>
-                  </div>
-                  <div class="card">
-                    <h2>Follow Me</h2>
-                    <p>Some text..</p>
-                  </div>
+                    <p>Nos encanta viajar y queremos que tú también vivas España de una forma única.
+                         Te llevamos a descubrir lugares increíbles, desde ciudades llenas de historia 
+                         hasta rincones escondidos que pocos conocen.</p>
                 </div>
-              </div>
+                <div class="card">
+                    <h2>¿Prefieres la Naturaleza?</h2>
+                    <div class="card2">
+                        <img src="imagenes/imagenCampoMadrid.jpg" alt="imagen ruta Madrid" class="flotanteImagen">
+                        <p><a href="https://madridsecreto.co/rutas-senderismo-madrid/">PULSA AQUÍ</a></p>
+                        <p>Las 20 mejores rutas cerca de Madrid </p>
+                    </div>
+                    <div class="card2">
+                        <img src="imagenes/imagenCampoLeon.jpeg" alt="imagen ruta Leon" class="flotanteImagen">
+                        <p><a href="https://www.komoot.com/es-es/guide/40003/rutas-de-senderismo-en-leon">PULSA AQUÍ</a></p>
+                        <p>Las 10 rutas más TOP en León </p>
+                    </div>
+                    <div class="card2">
+                        <img src="imagenes/imagenCampoAlbacete.jpg" alt="imagen ruta Albacete" class="flotanteImagen">
+                        <p><a href="https://www.tuscasasrurales.com/blog/rutas-senderismo-albacete/">PULSA AQUÍ</a></p>
+                        <p>Descubre las mejores rutas en Albacete </p>
+                    </div>
+                </div>
+                <div class="card">
+                        <h2>Follow Me</h2>
+                        <p>Some text..</p>
+                </div>
+            </div>
+        </div>
               
-              <div class="footer">
+        <div class="footer">
                 <h2>Footer</h2>
                 <p>Todos los derechos reservados</p>
-              </div>
+        </div>
     </body>
 </html>
