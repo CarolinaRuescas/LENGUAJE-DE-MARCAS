@@ -16,7 +16,7 @@
                 font-family: Arial, Helvetica, sans-serif;
                 line-height: 1.6;
                 background-color: #f4f4f4;
-                color: #333;
+                color: #000000;
             }
 
             /* Style the header */
@@ -51,9 +51,19 @@
                 background-color: #ffffff;
             }
 
+            h2{
+                color:#082e1f;
+                font-variant: small-caps;
+
+            }
+
+            h3{
+                color: #ca6623;
+            }
+
             .topnav {
                 overflow: hidden;
-                background-color: #47b68b;
+                background-color: #ffffff;
             }
             .topnav a {
                 float: center;
@@ -62,6 +72,10 @@
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
+                border: 4px solid #082e1f;
+                margin-bottom: 15px;
+                background-color:  #47b68b;
+
             }
             .topnav a:hover {
                 background-color: #082e1f;
@@ -72,12 +86,13 @@
             .leftcolumn {   
                 float: left;
                 width: 75%;
+                background-color: #ffffff;
             }
 
             .rightcolumn {
                 float: left;
                 width: 25%;
-                background-color: #f1f1f1;
+                background-color: #ffffff;
                 padding-left: 20px;
             }
 
@@ -96,6 +111,7 @@
                 background-color: #e2c298;
                 padding: 20px;
                 margin-top: 20px;
+                text-align: center;
             }
 
             .row::after {
@@ -114,13 +130,12 @@
             }
 
             .flotanteImagen {
-                position: fixed;
-                top: 20px; 
-                right: 20px; 
-                width: 30%;  
+                top: 30px; 
+                right: 40px; 
+                width: 70%;  
                 height: auto;
-                border-radius: 8px;
-                transition: all 0.3s ease;  
+                border-radius: 30px;
+        
             }
 
             @media screen and (max-width: 800px) {
@@ -136,8 +151,9 @@
                 width: 100%;
                 }
             }
+
+            
          
-           
         </style>
     </head>
     <body>
@@ -153,66 +169,64 @@
                 </ul>
             </nav>
         </header>
-
-        
-            <!-- Contenedor principal con las entradas-->
-            <div class="topnav">
-                
-                <a href="https://www.esmadrid.com/">· Madrid ·</a></li>
-                <a href="https://www.viajarabarcelona.org/">· Barcelona ·</a></li>
-                <a href="https://www.andalucia.org/es/provincia-malaga">· Málaga ·</a></li>
-            </div>
             
-            <div class="row">
-                <div class="leftcolumn">
-                  <div class="card">
+        <div class="topnav">
+                
+            <a href="https://www.esmadrid.com/">· Madrid ·</a></li>
+            <a href="https://www.viajarabarcelona.org/">· Barcelona ·</a></li>
+            <a href="https://www.andalucia.org/es/provincia-malaga">· Málaga ·</a></li>
+        </div>
+            
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
                     <h2>· ¡ VIAJA POR MADRID ! ·</h2>
                     <h5>1º Viaje, 13 de Marzo, 2025</h5>
-                    <img src="imagenMadrid.jpg" alt="imagen de Madrid" clall="flotanteImagen">
-                    <p>¿Quieres saber un poco sobre Madrid?</p>
+                    <img src="imagenes/imagenMadrid.jpg" alt="imagen de Madrid" class="flotanteImagen">
+                    <h3>¿Quieres saber un poco sobre Madrid?</h3>
                     <p>Descubre Madrid como nunca antes con nuestra guía de viajes completa. Desde los emblemáticos museos 
                         y monumentos hasta los rincones más ocultos de la ciudad, te ofrecemos recomendaciones personalizadas, 
                         itinerarios únicos y consejos locales para que disfrutes de cada momento. Ya sea que busques arte, gastronomía, 
                         cultura o aventura, Madrid te espera con los brazos abiertos.
                     </p>
-                  </div>
-                  <div class="card">
+                </div>
+                <div class="card">
                     <h2>· ¡ BARCELONA ! ·</h2>
                     <h5>2º Viaje, 15 de Marzo, 2025</h5>
-                    <div class="fakeimg" style="height:200px;">Image</div>
-                    <p>¿Quieres saber un poco sobre Barcelona?</p>
+                    <img src="imagenes/imagenBarcelona.jpg" alt="imagen de Barcelona" class="flotanteImagen">
+                    <h3>¿Quieres saber un poco sobre Barcelona?</h3>
                     <p>Explora Barcelona, una ciudad vibrante llena de historia, arquitectura y cultura. Desde la majestuosa Sagrada Familia
                         hasta sus encantadoras calles del barrio Gótico, nuestra guía te lleva a los lugares más icónicos y a los secretos 
                         mejor guardados. Disfruta de una experiencia única con itinerarios personalizados, recomendaciones de restaurantes y 
                         actividades, ¡y vive lo mejor de la Ciudad Condal!
                     </p>
-                  </div>
-                  <div class="card">
+                </div>
+                <div class="card">
                     <h2>· ¡ MÁLAGA ! ·</h2>
                     <h5>Title description, Sep 2, 2017</h5>
-                    <div class="fakeimg" style="height:200px;">Image</div>
-                    <p>¿Quieres saber un poco sobre Málaga?</p>
+                    <img src="imagenes/imagenMalaga.jpg" alt="imagen de Malaga" class="flotanteImagen">
+                    <h3>¿Quieres saber un poco sobre Málaga?</h3>
                     <p>Sumérgete en la belleza de Málaga, un destino que fusiona historia, sol y mar. Descubre sus impresionantes playas, 
                         su vibrante cultura andaluza y los tesoros históricos como la Alcazaba y el Museo Picasso. Te ofrecemos itinerarios
                          a medida, recomendaciones gastronómicas y todo lo que necesitas para vivir la magia de esta ciudad costera. ¡Málaga 
                          te espera con su clima perfecto y su auténtico encanto!
                     </p>
-                  </div>
                 </div>
+            </div>
                 <div class="rightcolumn">
                   <div class="card">
                     <h2>Sobre Nosotros</h2>
-                    <div class="fakeimg" style="height:100px;">Image</div>
+                    <img src="imagenes/imagenLogo.jpeg" alt="imagen Logo" class="flotanteImagen">
                     <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
                   </div>
                   <div class="card">
-                    <h3>Popular Post</h3>
+                    <h2>Popular Post</h2>
                     <div class="fakeimg"><p>Image</p></div>
                     <div class="fakeimg"><p>Image</p></div>
                     <div class="fakeimg"><p>Image</p></div>
                   </div>
                   <div class="card">
-                    <h3>Follow Me</h3>
+                    <h2>Follow Me</h2>
                     <p>Some text..</p>
                   </div>
                 </div>
@@ -220,7 +234,7 @@
               
               <div class="footer">
                 <h2>Footer</h2>
-                <p>Aradecimientos</p>
+                <p>Todos los derechos reservados</p>
               </div>
     </body>
 </html>
