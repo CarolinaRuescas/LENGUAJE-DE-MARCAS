@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+<!-- Autora: Carolina Ruescas Cruz-->
+<!-- 1º DAW . 3º Evaluación-->
     <head>
         <title>VIAJES</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
+            /* Se va a emplear un estilo incrustado en la Web*/
             * {
                 box-sizing: border-box;
                 margin: 0;
                 padding: 0;
             }
             
-
             body {
                 font-family: Arial, Helvetica, sans-serif;
                 line-height: 1.6;
@@ -19,33 +21,33 @@
                 color: #000000;
             }
 
-            header {
+            .header {
                 background: linear-gradient(to right, rgb(16, 71, 58), #feb47b);
                 padding: 30px;
                 text-align: center;
                 color: white;
-                
             }
-            header h1 {
+
+            .header h1 {
                 font-size: 50px;
             }
 
-            header nav ul li {
+            .header nav ul li {
                 display: inline;
                 margin-right: 20px;
             }
 
-            header nav ul li a {
+            .header nav ul li a {
                 background-color: #eea67c;
                 padding: 3px 3px;
                 border-radius: 5px;
                 text-decoration: none;
                 color: white;
                 font-weight: bold;
-                transition: background-color 0.3s ease;
-                
+                transition: background-color 0.3s ease;     
             }
-            header nav ul li a:hover {
+
+            .header nav a:hover {
                 color: rgb(16, 71, 58);
                 background-color: #ffffff;
             }
@@ -78,22 +80,21 @@
                 overflow: hidden;
                 background-color: #ffffff;
             }
+            
             .topnav a {
-                display: block;
+                float: center;
+                display: block ;
                 color: #ffffff;
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
                 border: 4px outset #082e1f;
-                margin-bottom: 15px;
-                margin-top: 15px;
                 background-color:  #47b68b;
-
             }
+            
             .topnav a:hover {
                 background-color: #082e1f;
                 color: rgb(216, 89, 30);
-
             }
 
             .leftcolumn {   
@@ -136,7 +137,6 @@
                 text-align: center;
                 color: white;
                 margin-top: 20px;
-
             }
 
             .flotanteImagen {
@@ -145,7 +145,6 @@
                 width: 70%;  
                 height: auto;
                 border-radius: 30px;
-        
             }
 
             @media screen and (max-width: 800px) {
@@ -161,10 +160,11 @@
                 width: 100%;
                 }
             }
+
         </style>
     </head>
     <body>
-        <header>
+        <div class="header">
               <h1>Descubriendo el mundo</h1>
               <p>Descubre destinos increíbles y consejos para tus próximas aventuras</p>
               <br>
@@ -175,16 +175,14 @@
                     <li><a href="#">Contacto</a></li>
                 </ul>
             </nav>
-        </header>
-            
-        <div class="topnav">
-            <ul>
-                <li><a href="https://www.esmadrid.com/">· Madrid ·</a></li>
-                <li><a href="https://www.viajarabarcelona.org/">· Barcelona ·</a></li>
-                <li><a href="https://www.andalucia.org/es/provincia-malaga">· Málaga ·</a></li>
-            </ul>
         </div>
             
+        <div class="topnav">
+            <a href="https://www.esmadrid.com/">· Madrid ·</a>
+            <a href="https://www.viajarabarcelona.org/">· Barcelona ·</a>
+            <a href="https://www.andalucia.org/es/provincia-malaga">· Málaga ·</a>
+        </div>
+
         <div class="row">
             <div class="leftcolumn">
                 <div class="card">
@@ -257,3 +255,4 @@
         </div>
     </body>
 </html>
+gshsh
