@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Autora: Carolina Ruescas Cruz-->
+<!-- 1º DAW . 3º Evaluación-->
+    <head>
+        <title>VIAJES</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /* Se va a emplear un estilo incrustado en la Web*/
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 1.6;
+                background-color: #f4f4f4;
+                color: #000000;
+            }
+
+            .header {
+                background: linear-gradient(to right, rgb(16, 71, 58), #feb47b);
+                padding: 30px;
+                text-align: center;
+                color: white;
+            }
+
+            .header h1 {
+                font-size: 50px;
+            }
+
+            .header nav ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+
+            .header nav ul li a {
+                background-color: #eea67c;
+                padding: 3px 3px;
+                border-radius: 5px;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                transition: background-color 0.3s ease;     
+            }
+
+            .header nav a:hover {
+                color: rgb(16, 71, 58);
+                background-color: #ffffff;
+            }
+
+            .card2 a{
+                background-color: #082e1f;
+                padding: 3px 3px;
+                border-radius: 5px;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+            }
+
+    
+
+            h2{
+                color:#082e1f;
+                font-variant: small-caps;
+            }
+
+    
+            .topnav a {
+                float: center;
+                display: block ;
+                color: #ffffff;
+                text-align: center;
+                padding: 12px;
+                text-decoration: none;
+                border: 4px outset #082e1f;
+                background-color:  #47b68b;
+            }
+            
+            .topnav a:hover {
+                background-color: #082e1f;
+                color: rgb(216, 89, 30);
+            }
+
+            .leftcolumn {   
+                float: none;
+                width: 100%;
+                background-color: #ffffff;
+            }
+
+
+            .card {
+                background-color: #e2c298;
+                padding: 20px;
+                margin-top: 20px;
+                text-align: center;
+                border: dotted 8px #082e1f;
+
+            }
+
+            .column::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .footer {
+                background: linear-gradient(to right, rgb(16, 71, 58), #feb47b);
+                padding: 10px;
+                text-align: center;
+                color: white;
+                margin-top: 20px;
+            }
+
+            
+
+            @media screen and (max-width: 800px) {
+                .leftcolumn, .rightcolumn {   
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+
+            @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Descubriendo España</h1>
+            <p>Descubre destinos increíbles y consejos para tus próximas aventuras</p>
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Descubre Nuevos Destinos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+            
+        <div class="topnav">
+            <a href="https://www.esmadrid.com/">· Madrid ·</a>
+            <a href="https://www.viajarabarcelona.org/">· Barcelona ·</a>
+            <a href="https://www.andalucia.org/es/provincia-malaga">· Málaga ·</a>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <form action="/action_page.php">
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="nombre">Nombre</label>
+                      </div>
+                      <div class="col-75">
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre es..">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="apellido">Apellido</label>
+                      </div>
+                      <div class="col-75">
+                        <input type="text" id="apellido" name="apellido" placeholder="Tu apellido es..">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="Pais">País</label>
+                      </div>
+                      <div class="col-75">
+                        <select id="Pais" name="pais">
+                          <option value="Spain">España</option>
+                          <option value="Portugal">Portugal</option>
+                          <option value="France">Francia</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-25">
+                        <label for="comentario">Comentario</label>
+                      </div>
+                      <div class="col-75">
+                        <textarea id="comentario" name="comentario" placeholder="Comenta algo.." style="height:200px"></textarea>
+                      </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                      <input type="submit" value="Submit">
+                    </div>
+                    </form>
+                  </div>
+            </div>
+        </div>
+              
+        <div class="footer">
+                <h2>Footer</h2>
+                <p>Todos los derechos reservados</p>
+        </div>
+    </body>
+</html>
