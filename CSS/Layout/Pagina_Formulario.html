@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-<!-- Autora: Carolina Ruescas Cruz-->
+<!-- Autores: Carolina Ruescas Cruz y Adrián Mustatea-->
 <!-- 1º DAW . 3º Evaluación-->
     <head>
         <title>VIAJES</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-            /* Se va a emplear un estilo incrustado en la Web*/
+            
             * {
                 box-sizing: border-box;
                 margin: 0;
@@ -17,9 +17,11 @@
             body {
                 font-family: Arial, Helvetica, sans-serif;
                 line-height: 1.6;
-                background-color: #f4f4f4;
+                background-color: #ffffff;
                 color: #000000;
             }
+
+            /* Encabezado de la página*/
 
             .header {
                 background: linear-gradient(to right, rgb(16, 71, 58), #feb47b);
@@ -30,6 +32,7 @@
 
             .header h1 {
                 font-size: 50px;
+                text-shadow: 0 0 10px #fd6e1b
             }
 
             .header nav ul li {
@@ -39,7 +42,7 @@
 
             .header nav ul li a {
                 background-color: #eea67c;
-                padding: 3px 3px;
+                padding: 10px 10px;
                 border-radius: 5px;
                 text-decoration: none;
                 color: white;
@@ -52,44 +55,20 @@
                 background-color: #ffffff;
             }
 
-            .card2 a{
-                background-color: #082e1f;
-                padding: 3px 3px;
-                border-radius: 5px;
-                text-decoration: none;
-                color: white;
-                font-weight: bold;
-                transition: background-color 0.3s ease;
-            }
-
-    
-
+            
             h2{
                 color:#082e1f;
                 font-variant: small-caps;
+                font-size: 35px;
             }
 
-    
-            .topnav a {
-                float: center;
-                display: block ;
-                color: #ffffff;
-                text-align: center;
-                padding: 12px;
-                text-decoration: none;
-                border: 4px outset #082e1f;
-                background-color:  #47b68b;
-            }
-            
-            .topnav a:hover {
-                background-color: #082e1f;
-                color: rgb(216, 89, 30);
-            }
+            /* Cuerpo de la página */
 
-            .leftcolumn {   
+            .column {   
                 float: none;
                 width: 100%;
-                background-color: #ffffff;
+                padding: 20px;
+                background-color: #ffffff;                
             }
 
 
@@ -100,13 +79,63 @@
                 text-align: center;
                 border: dotted 8px #082e1f;
 
+
             }
 
-            .column::after {
+            /* Formulario */
+            input[type=text], select, textarea {
+              width: 100%;
+              padding: 12px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              resize: vertical;
+            }
+
+            label {
+              padding: 12px 12px 12px 0;
+              display: inline-block;
+            }
+
+            input[type=submit] {
+              background-color: #04AA6D;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              float: right;
+            }
+
+            input[type=submit]:hover {
+              background-color: #45a049;
+            }
+
+            .container {
+              border-radius: 5px;
+              background-color: #f2f2f2;
+              padding: 20px;
+            }
+
+            .col-25 {
+              float: left;
+              width: 25%;
+              margin-top: 6px;
+            }
+
+            .col-75 {
+              float: left;
+              width: 75%;
+              margin-top: 6px;
+            }
+
+            .row::after {
                 content: "";
                 display: table;
                 clear: both;
             }
+
+
+            /* Pie de página */
 
             .footer {
                 background: linear-gradient(to right, rgb(16, 71, 58), #feb47b);
@@ -116,7 +145,14 @@
                 margin-top: 20px;
             }
 
+            h2{
+                color:#082e1f;
+                font-variant: small-caps;
+                font-size: 35px;
+            }
+
             
+            /* Para hacerla responsiva */
 
             @media screen and (max-width: 800px) {
                 .leftcolumn, .rightcolumn {   
@@ -132,6 +168,13 @@
                 }
             }
 
+            @media screen and (max-width: 600px) {
+              .col-25, .col-75, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+              }
+            }   
+
         </style>
     </head>
     <body>
@@ -141,17 +184,10 @@
             <br>
             <nav>
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Descubre Nuevos Destinos</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="Pagina_Inicio.html">Inicio</a></li>
+                    <li><a href="Pagina_Gastronomia.html">Gastronomía</a></li>
                 </ul>
             </nav>
-        </div>
-            
-        <div class="topnav">
-            <a href="https://www.esmadrid.com/">· Madrid ·</a>
-            <a href="https://www.viajarabarcelona.org/">· Barcelona ·</a>
-            <a href="https://www.andalucia.org/es/provincia-malaga">· Málaga ·</a>
         </div>
 
         <div class="column">
